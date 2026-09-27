@@ -1,0 +1,24 @@
+
+> oneway-frontend@1.0.0 build
+> vite build && node scripts/export.mjs && node scripts/check-export.mjs
+
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 439 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/index.html                   0.89 kB │ gzip:   0.55 kB
+../dist/assets/index-BWHb8tDx.css   15.08 kB │ gzip:   3.80 kB
+../dist/assets/ccip-Do32PVp9.js      2.83 kB │ gzip:   1.30 kB
+../dist/assets/index-CjiQLP5l.js   534.66 kB │ gzip: 163.38 kB
+
+✓ built in 423ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+Verified ONEW: 38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee
+Verified AsymmetricTaxHook: 4fac2f3686844a6b655b80d9018fa1283a13a7105d8faf6be15ab5261571f05f
+Deployment manifest written: 9 assets
+PASS: exact handoff, network, ABI bindings and all 9 SHA-256 hashes; export 576603 bytes.

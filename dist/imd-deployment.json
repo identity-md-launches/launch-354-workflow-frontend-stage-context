@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "launchId": "dba466f8-9df5-4742-9099-da3a12fe931d",
+  "chainId": 11155111,
+  "sourceCommit": "b616e7acde036293543346c60d811dd53a7e7020",
+  "attestationHash": "1a22f103fcd7e1f22fee753bab419a22f1343d6e3409c42a71870d0ac7f02098",
+  "contracts": [
+    {
+      "name": "ONEW",
+      "address": "0x52e1a5d1257fe87c8a7aae7094ba2e6ad2d0253f",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "abiPath": "abi/ONEW.json"
+    },
+    {
+      "name": "AsymmetricTaxHook",
+      "address": "0xef78f3c5e8f76fb90398e02519ca27b107ef80cc",
+      "abiHash": "4fac2f3686844a6b655b80d9018fa1283a13a7105d8faf6be15ab5261571f05f",
+      "abiPath": "abi/AsymmetricTaxHook.json"
+    }
+  ],
+  "network": {
+    "chainId": 11155111,
+    "name": "Sepolia",
+    "testnet": true,
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "explorer": "https://sepolia.etherscan.io",
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "faucets": [
+      "https://cloud.google.com/application/web3/faucet/ethereum/sepolia",
+      "https://www.alchemy.com/faucets/ethereum-sepolia"
+    ],
+    "uniswapV4": {
+      "poolManager": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+      "universalRouter": "0x3a9d48ab9751398bbfa63ad67599bb04e4bdf98b",
+      "quoter": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+      "stateView": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+      "positionManager": "0x429ba70129df741b2ca2a85bc3a2a3328e5c09b4",
+      "permit2": "0x000000000022d473030f116ddee9f6b43ac78ba3"
+    }
+  },
+  "walletAddChain": {
+    "chainId": "0xaa36a7",
+    "chainName": "Sepolia",
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com",
+      "https://rpc.sepolia.ethpandaops.io",
+      "https://sepolia.rpc.sentio.xyz"
+    ],
+    "nativeCurrency": {
+      "name": "Sepolia Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "blockExplorerUrls": [
+      "https://sepolia.etherscan.io"
+    ]
+  },
+  "integration": {
+    "routerKind": "PoolSwapTest",
+    "poolSwapTest": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+    "abiPaths": {
+      "router": "abi/PoolSwapTest.json",
+      "stateView": "abi/StateView.json",
+      "quoter": "abi/V4Quoter.json"
+    }
+  },
+  "pool": {
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336000",
+    "pairedCurrency": "0x0000000000000000000000000000000000000000"
+  },
+  "token": {
+    "name": "Oneway",
+    "symbol": "ONEW",
+    "contract": "ONEW",
+    "decimals": 18
+  },
+  "hookContract": "AsymmetricTaxHook",
+  "deploymentBlock": 11791379,
+  "assets": [
+    {
+      "path": "abi/AsymmetricTaxHook.json",
+      "sha256": "597b9542265bfb1f3cf09258e5021b933fc8a2ca2b1925d3a4e446eadab3eacf"
+    },
+    {
+      "path": "abi/ONEW.json",
+      "sha256": "9578fcb499b4ba5fac51462a67a2654d9f803e0ea3af9bdb19130ff695808542"
+    },
+    {
+      "path": "abi/PoolSwapTest.json",
+      "sha256": "94cc5a2917a51b88648c02065ee0eeeef8d702ce742285e4736720532c83ea88"
+    },
+    {
+      "path": "abi/StateView.json",
+      "sha256": "a47cc2431d92c7fc66a9667a48b0a936702296e27f3194a97967082ec5f66cc6"
+    },
+    {
+      "path": "abi/V4Quoter.json",
+      "sha256": "981b91403e99bef42a45005d7674b2c5b6b579d6ad20563d54142544a042ffe3"
+    },
+    {
+      "path": "assets/ccip-Do32PVp9.js",
+      "sha256": "69956b71030c96356fc7ff556fcd62329535b8e84bf62af6c867272858aea7f6"
+    },
+    {
+      "path": "assets/index-BWHb8tDx.css",
+      "sha256": "b531c3b910e6f27d6e93cde0302cf6bcd1830b19852d5a83ef561d430eed0fdd"
+    },
+    {
+      "path": "assets/index-CjiQLP5l.js",
+      "sha256": "6c2d5e4185ded169b061d9d6ab42b475599b8fdcc55d971b765d8b7553bdbed7"
+    },
+    {
+      "path": "index.html",
+      "sha256": "7309007ecc3c0305967009423c34f84c08eaa2aef5a6b3a39ec85866685d5679"
+    }
+  ]
+}

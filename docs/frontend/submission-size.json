@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-09-27",
+  "maximumSubmissionBytes": 8388608,
+  "exportBytes": 576603,
+  "trackedAndDeliverableBytesBeforeThisReport": 3011244,
+  "completeGitBundleBelowBytes": 2097152,
+  "scopeCheck": "PASS: only web/**, dist/** and docs/** added or changed",
+  "ignoredDependencyDirectories": "PASS at every web nesting level",
+  "submodules": 0,
+  "protectedSourceModified": false,
+  "method": "Created a disposable clone in test/scratch, copied allowed deliverables including this report, committed only there, then measured git bundle --all. The protected task repository remains uncommitted because its .git is read-only."
+}

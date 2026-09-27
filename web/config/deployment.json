@@ -1,0 +1,55 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-258-asymmetrictaxhook",
+  "version": 1,
+  "launchId": "dba466f8-9df5-4742-9099-da3a12fe931d",
+  "manifest": {
+    "hook": {
+      "contract": "AsymmetricTaxHook",
+      "permissions": [
+        "beforeSwap",
+        "afterSwap",
+        "beforeSwapReturnDelta",
+        "afterSwapReturnDelta"
+      ],
+      "constructorArgs": [
+        "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"
+      ]
+    },
+    "kind": "univ4_hook",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336000",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Oneway (ONEW) with AsymmetricTaxHook on the native-ETH v4 pool (currency0 native ETH, currency1 ONEW, fee 3000, tickSpacing 60) on Sepolia; a test toy with no value. Hook constructor takes exactly one argument, the Sepolia PoolManager (IPoolManager manager); ONEW takes none. getHookPermissions returns beforeSwap, afterSwap, beforeSwapReturnDelta and afterSwapReturnDelta, all others false (address bits 0x00CC), validated by Hooks.validateHookPermissions in the constructor, so the CREATE2 salt must be mined for those bits with the factory address and full init code. initialPrice is sqrtPriceX96 = 1000 * 2^96, i.e. 1,000,000 ONEW per ETH (tick 138162), the value used in test/helpers/LaunchParameters.sol and the launch rehearsal, which initializes there, seeds one-sided ONEW liquidity and makes the first buy into the ETH-less pool. Behaviour: sells (oneForZero) pay 200 bps of the ETH leg into the pool's bonus pot as ERC-6909 ETH claims (beforeSwap specified delta for exact-out sells, afterSwap unspecified delta for exact-in sells); buys pay no hook fee; exact-input buys get min(floor(input * 100 / 10000), pot) as a negative specified delta, settled by burning hook claims; partial fills revert (PartialFill); non-native-ETH pools get zero deltas. Rates are source constants; no owner, setter, pause, upgrade or sweep. Events SellTaxed(poolId, ethLeg, tax) and BuyBonus(poolId, input, bonus); views pot(poolId) and bonusFor(poolId, input). Supply, allocation, owners and chain come from the separately versioned launch policy, not this manifest; artifact linkage comes from the release attestation.",
+    "token": {
+      "name": "Oneway",
+      "symbol": "ONEW",
+      "contract": "ONEW",
+      "decimals": 18
+    }
+  },
+  "contracts": [
+    {
+      "name": "ONEW",
+      "txHash": "0x70dd50faa24f86ffe0591282b961e3aa44e31cc7f3601f73c5f73eb46561c166",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0x52e1a5d1257fe87c8a7aae7094ba2e6ad2d0253f",
+      "blockNumber": 11791379,
+      "creationCodeHash": "49fd48b3f0add13298a4a2b49c11e70617ffa2bce081dc5a9a252bce34c77b05"
+    },
+    {
+      "name": "AsymmetricTaxHook",
+      "txHash": "0x70dd50faa24f86ffe0591282b961e3aa44e31cc7f3601f73c5f73eb46561c166",
+      "abiHash": "4fac2f3686844a6b655b80d9018fa1283a13a7105d8faf6be15ab5261571f05f",
+      "address": "0xef78f3c5e8f76fb90398e02519ca27b107ef80cc",
+      "blockNumber": 11791379,
+      "creationCodeHash": "7cc112cb91cdb39eeed49ccc904414f5c04942266fc845c0a9f23bff9907922d"
+    }
+  ],
+  "sourceCommit": "b616e7acde036293543346c60d811dd53a7e7020",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "1a22f103fcd7e1f22fee753bab419a22f1343d6e3409c42a71870d0ac7f02098"
+}

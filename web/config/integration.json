@@ -1,0 +1,9 @@
+{
+  "routerKind": "PoolSwapTest",
+  "poolSwapTest": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+  "abiPaths": {
+    "router": "abi/PoolSwapTest.json",
+    "stateView": "abi/StateView.json",
+    "quoter": "abi/V4Quoter.json"
+  }
+}

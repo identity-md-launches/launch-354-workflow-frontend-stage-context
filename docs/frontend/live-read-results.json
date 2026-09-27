@@ -1,0 +1,194 @@
+{
+  "checkedAt": "2026-09-27T06:54:08.784Z",
+  "sourceCommit": "b616e7acde036293543346c60d811dd53a7e7020",
+  "poolId": "0xce52378253468cb1cbc2d8547f9d95d9b9306b8c5b1b10e293f567fcbfe27338",
+  "noTransactionsBroadcast": true,
+  "endpoints": [
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "chainId": 11155111,
+      "block": "11791665",
+      "code": [
+        {
+          "name": "ONEW",
+          "address": "0x52e1a5d1257fe87c8a7aae7094ba2e6ad2d0253f",
+          "bytes": 1722
+        },
+        {
+          "name": "AsymmetricTaxHook",
+          "address": "0xef78f3c5e8f76fb90398e02519ca27b107ef80cc",
+          "bytes": 3198
+        },
+        {
+          "name": "PoolManager",
+          "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+          "bytes": 24009
+        },
+        {
+          "name": "StateView",
+          "address": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+          "bytes": 3531
+        },
+        {
+          "name": "Quoter",
+          "address": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+          "bytes": 5820
+        },
+        {
+          "name": "PoolSwapTest",
+          "address": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+          "bytes": 6950
+        }
+      ],
+      "routerManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+      "hookManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+      "slot0": [
+        "560227709747861399187319382274582",
+        177284,
+        0,
+        3000
+      ],
+      "pot": "0",
+      "decimals": 18,
+      "sellTaxBps": "200",
+      "bonusFor001ETH": "0",
+      "quote": {
+        "buy": {
+          "input": "100000000000000",
+          "output": "4962985601069505286390",
+          "gasEstimate": "100996"
+        },
+        "sell": {
+          "input": "1000000000000000000",
+          "error": "The contract function \"quoteExactInputSingle\" reverted.",
+          "decoded": "The pool would produce a partial fill at its available liquidity or price limit. Try a smaller amount, refresh after liquidity changes, or adjust the limit."
+        }
+      },
+      "status": "verified reads"
+    },
+    {
+      "url": "https://rpc.sepolia.ethpandaops.io",
+      "chainId": 11155111,
+      "block": "11791665",
+      "code": [
+        {
+          "name": "ONEW",
+          "address": "0x52e1a5d1257fe87c8a7aae7094ba2e6ad2d0253f",
+          "bytes": 1722
+        },
+        {
+          "name": "AsymmetricTaxHook",
+          "address": "0xef78f3c5e8f76fb90398e02519ca27b107ef80cc",
+          "bytes": 3198
+        },
+        {
+          "name": "PoolManager",
+          "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+          "bytes": 24009
+        },
+        {
+          "name": "StateView",
+          "address": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+          "bytes": 3531
+        },
+        {
+          "name": "Quoter",
+          "address": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+          "bytes": 5820
+        },
+        {
+          "name": "PoolSwapTest",
+          "address": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+          "bytes": 6950
+        }
+      ],
+      "routerManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+      "hookManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+      "slot0": [
+        "560227709747861399187319382274582",
+        177284,
+        0,
+        3000
+      ],
+      "pot": "0",
+      "decimals": 18,
+      "sellTaxBps": "200",
+      "bonusFor001ETH": "0",
+      "quote": {
+        "buy": {
+          "input": "100000000000000",
+          "output": "4962985601069505286390",
+          "gasEstimate": "100996"
+        },
+        "sell": {
+          "input": "1000000000000000000",
+          "error": "The contract function \"quoteExactInputSingle\" reverted.",
+          "decoded": "The pool would produce a partial fill at its available liquidity or price limit. Try a smaller amount, refresh after liquidity changes, or adjust the limit."
+        }
+      },
+      "status": "verified reads"
+    },
+    {
+      "url": "https://sepolia.rpc.sentio.xyz",
+      "chainId": 11155111,
+      "block": "11791665",
+      "code": [
+        {
+          "name": "ONEW",
+          "address": "0x52e1a5d1257fe87c8a7aae7094ba2e6ad2d0253f",
+          "bytes": 1722
+        },
+        {
+          "name": "AsymmetricTaxHook",
+          "address": "0xef78f3c5e8f76fb90398e02519ca27b107ef80cc",
+          "bytes": 3198
+        },
+        {
+          "name": "PoolManager",
+          "address": "0xe03a1074c86cfedd5c142c4f04f1a1536e203543",
+          "bytes": 24009
+        },
+        {
+          "name": "StateView",
+          "address": "0xe1dd9c3fa50edb962e442f60dfbc432e24537e4c",
+          "bytes": 3531
+        },
+        {
+          "name": "Quoter",
+          "address": "0x61b3f2011a92d183c7dbadbda940a7555ccf9227",
+          "bytes": 5820
+        },
+        {
+          "name": "PoolSwapTest",
+          "address": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+          "bytes": 6950
+        }
+      ],
+      "routerManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+      "hookManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+      "slot0": [
+        "560227709747861399187319382274582",
+        177284,
+        0,
+        3000
+      ],
+      "pot": "0",
+      "decimals": 18,
+      "sellTaxBps": "200",
+      "bonusFor001ETH": "0",
+      "quote": {
+        "buy": {
+          "input": "100000000000000",
+          "output": "4962985601069505286390",
+          "gasEstimate": "100996"
+        },
+        "sell": {
+          "input": "1000000000000000000",
+          "error": "The contract function \"quoteExactInputSingle\" reverted.",
+          "decoded": "The pool would produce a partial fill at its available liquidity or price limit. Try a smaller amount, refresh after liquidity changes, or adjust the limit."
+        }
+      },
+      "status": "verified reads"
+    }
+  ]
+}

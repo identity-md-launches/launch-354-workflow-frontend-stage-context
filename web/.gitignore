@@ -1,0 +1,7 @@
+# Explicit allowance: this file only. Applies to dependency/cache folders at all depths.
+node_modules/
+.cache/
+.vite/
+playwright-report/
+test-results/
+*.tsbuildinfo

@@ -1,0 +1,17 @@
+
+> oneway-frontend@1.0.0 test
+> node --test tests/*.test.mjs
+
+✔ Amounts reject zero, exponent, negatives and excessive precision without rounding (1.983009ms)
+✔ Price limits bound actual squared prices and always move in the swap direction (1.242729ms)
+✔ Packed signed balance deltas decode the correct output leg (0.376671ms)
+✔ Both exported ABIs bind to the handoff; tampering changes the canonical hash (22.670164ms)
+✔ nested quoter and PoolManager revert bytes expose the actionable hook error (24.740134ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 527.8121

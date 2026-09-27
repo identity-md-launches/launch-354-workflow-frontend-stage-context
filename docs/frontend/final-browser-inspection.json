@@ -1,0 +1,40 @@
+{
+  "active": "<select id=\"price-limit\"><option value=\"50\">0.5%</option><option value=\"100\">1%</option><option value=\"300\">3%</option></select>",
+  "overflow": false,
+  "loadedAssets": [
+    {
+      "name": "assets/index-CjiQLP5l.js",
+      "size": 534966
+    },
+    {
+      "name": "assets/index-BWHb8tDx.css",
+      "size": 15382
+    },
+    {
+      "name": "imd-deployment.json",
+      "size": 4268
+    },
+    {
+      "name": "abi/ONEW.json",
+      "size": 6015
+    },
+    {
+      "name": "abi/AsymmetricTaxHook.json",
+      "size": 9244
+    },
+    {
+      "name": "abi/PoolSwapTest.json",
+      "size": 2431
+    },
+    {
+      "name": "abi/StateView.json",
+      "size": 784
+    },
+    {
+      "name": "abi/V4Quoter.json",
+      "size": 2183
+    }
+  ],
+  "status": "Read at block 11,791,688 · Updates every 30 seconds",
+  "quote": "Quote at block 11,791,688 · includes LP fee and current bonus"
+}

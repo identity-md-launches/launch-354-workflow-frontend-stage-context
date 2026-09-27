@@ -1,0 +1,74 @@
+[
+  {
+    "selector": ".lede",
+    "foreground": "rgb(98, 104, 94)",
+    "background": "rgb(245, 244, 239)",
+    "contrast": 5.21,
+    "fontSize": "17px",
+    "fontFamily": "\"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+  },
+  {
+    "selector": ".caption",
+    "foreground": "rgb(98, 104, 94)",
+    "background": "rgb(245, 244, 239)",
+    "contrast": 5.21,
+    "fontSize": "13px",
+    "fontFamily": "\"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+  },
+  {
+    "selector": ".primary",
+    "foreground": "rgb(38, 53, 33)",
+    "background": "rgb(216, 239, 158)",
+    "contrast": 10.39,
+    "fontSize": "16px",
+    "fontFamily": "\"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+  },
+  {
+    "selector": ".pot-card > p:not(.pot-value)",
+    "foreground": "rgb(194, 207, 187)",
+    "background": "rgb(38, 56, 46)",
+    "contrast": 7.67,
+    "fontSize": "14px",
+    "fontFamily": "\"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+  },
+  {
+    "selector": ".pot-value",
+    "foreground": "rgb(242, 245, 233)",
+    "background": "rgb(38, 56, 46)",
+    "contrast": 11.27,
+    "fontSize": "44px",
+    "fontFamily": "\"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+  },
+  {
+    "selector": ".fine-print",
+    "foreground": "rgb(98, 104, 94)",
+    "background": "rgb(255, 254, 250)",
+    "contrast": 5.68,
+    "fontSize": "12px",
+    "fontFamily": "\"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+  },
+  {
+    "selector": ".read-state",
+    "foreground": "rgb(98, 104, 94)",
+    "background": "rgb(245, 244, 239)",
+    "contrast": 5.21,
+    "fontSize": "12px",
+    "fontFamily": "\"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+  },
+  {
+    "selector": ".market-price > span",
+    "foreground": "rgb(98, 104, 94)",
+    "background": "rgb(245, 244, 239)",
+    "contrast": 5.21,
+    "fontSize": "14px",
+    "fontFamily": "\"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+  },
+  {
+    "selector": ".coin",
+    "foreground": "rgb(57, 64, 59)",
+    "background": "rgb(232, 233, 231)",
+    "contrast": 8.75,
+    "fontSize": "18.4px",
+    "fontFamily": "\"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+  }
+]

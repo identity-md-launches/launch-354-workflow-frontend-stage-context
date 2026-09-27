@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-09-27T06:57:38.286Z",
+  "engine": {
+    "name": "axe-core",
+    "version": "4.13.0"
+  },
+  "tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21aa",
+    "best-practice"
+  ],
+  "passes": 43,
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": [
+        {
+          "target": [
+            ".market-price > span"
+          ],
+          "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+        },
+        {
+          "target": [
+            ".coin"
+          ],
+          "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+        }
+      ]
+    }
+  ]
+}
