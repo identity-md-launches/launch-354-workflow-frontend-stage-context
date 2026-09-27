@@ -1,0 +1,21 @@
+{
+  "kind": "univ4_hook",
+  "hook": {
+    "contract": "AsymmetricTaxHook",
+    "constructorArgs": ["0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"],
+    "permissions": ["beforeSwap", "afterSwap", "beforeSwapReturnDelta", "afterSwapReturnDelta"]
+  },
+  "token": {
+    "contract": "ONEW",
+    "name": "Oneway",
+    "symbol": "ONEW",
+    "decimals": 18
+  },
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336000"
+  },
+  "notes": "Oneway (ONEW) with AsymmetricTaxHook on the native-ETH v4 pool (currency0 native ETH, currency1 ONEW, fee 3000, tickSpacing 60) on Sepolia; a test toy with no value. Hook constructor takes exactly one argument, the Sepolia PoolManager (IPoolManager manager); ONEW takes none. getHookPermissions returns beforeSwap, afterSwap, beforeSwapReturnDelta and afterSwapReturnDelta, all others false (address bits 0x00CC), validated by Hooks.validateHookPermissions in the constructor, so the CREATE2 salt must be mined for those bits with the factory address and full init code. initialPrice is sqrtPriceX96 = 1000 * 2^96, i.e. 1,000,000 ONEW per ETH (tick 138162), the value used in test/helpers/LaunchParameters.sol and the launch rehearsal, which initializes there, seeds one-sided ONEW liquidity and makes the first buy into the ETH-less pool. Behaviour: sells (oneForZero) pay 200 bps of the ETH leg into the pool's bonus pot as ERC-6909 ETH claims (beforeSwap specified delta for exact-out sells, afterSwap unspecified delta for exact-in sells); buys pay no hook fee; exact-input buys get min(floor(input * 100 / 10000), pot) as a negative specified delta, settled by burning hook claims; partial fills revert (PartialFill); non-native-ETH pools get zero deltas. Rates are source constants; no owner, setter, pause, upgrade or sweep. Events SellTaxed(poolId, ethLeg, tax) and BuyBonus(poolId, input, bonus); views pot(poolId) and bonusFor(poolId, input). Supply, allocation, owners and chain come from the separately versioned launch policy, not this manifest; artifact linkage comes from the release attestation."
+}
